@@ -1,0 +1,32 @@
+{
+  "name": "alexa-skill-agile-planner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhalla-shiraz/Alexa-Skill-Agile-Planner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhalla-shiraz/Alexa-Skill-Agile-Planner/issues"
+  },
+  "homepage": "https://github.com/bhalla-shiraz/Alexa-Skill-Agile-Planner#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
