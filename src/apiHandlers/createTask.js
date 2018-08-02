@@ -1,3 +1,4 @@
+import axios from 'axios'
 module.exports = (description, hours) => {
   console.log({
     name: description,
@@ -5,16 +6,18 @@ module.exports = (description, hours) => {
     remainingHours: hours
   })
 
-  // return axios
-  //   .post('https://8746ee8d.ngrok.io/task?origin=*', {
-  //     name: description,
-  //     totalHours: hours,
-  //     remainingHours: hours
-  //   })
-  //   .then(function(response) {
-  //     return response
-  //   })
-  //   .catch(function(error) {
-  //     return error
-  //   })
+  axios
+    .post('https://52da278e.ngrok.io/task', {
+      name: description,
+      totalHours: parseInt(hours),
+      remainingHours: parseInt(hours)
+    })
+    .then(function(response) {
+      console.log(response)
+    })
+    .catch(function(error) {
+      console.log('error', '============================================')
+      console.log('=====================================')
+      console.log(error.response)
+    })
 }
